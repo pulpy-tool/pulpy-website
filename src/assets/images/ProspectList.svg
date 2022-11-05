@@ -1,0 +1,13 @@
+<svg width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M87.5 31.25H95" stroke="#FF8140" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M87.5 35H91.25" stroke="#FF8140" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M96.25 39.375C96.25 45.9375 90.9375 51.25 84.375 51.25C77.8125 51.25 72.5 45.9375 72.5 39.375C72.5 32.8125 77.8125 27.5 84.375 27.5" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M97.5 52.5L95 50" stroke="#FF8140" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62 88.9702V113.667" stroke="#FF8140" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.3335 67.1665H113.667" stroke="#FF8140" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.2735 10.3335H90.6752C109.068 10.3335 113.667 14.9318 113.667 33.2735V65.9785C113.667 84.3718 109.068 88.9185 90.7268 88.9185H33.2735C14.9318 88.9702 10.3335 84.3718 10.3335 66.0302V33.2735C10.3335 14.9318 14.9318 10.3335 33.2735 10.3335Z" stroke="#292D32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.75 113.667H85.25" stroke="#292D32" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.645 39L26.355 39C24.675 39 24 39.675 24 41.37L24 45.645C24 47.325 24.675 48 26.355 48L30.63 48C32.325 48 33 47.325 33 45.645L33 41.37C33 39.675 32.325 39 30.645 39Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.645 39L39.355 39C37.675 39 37 39.675 37 41.37L37 45.645C37 47.325 37.675 48 39.355 48L43.63 48C45.325 48 46 47.325 46 45.645L46 41.37C46 39.675 45.325 39 43.645 39Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M56.645 39L52.355 39C50.675 39 50 39.675 50 41.37L50 45.645C50 47.325 50.675 48 52.355 48L56.63 48C58.325 48 59 47.325 59 45.645L59 41.37C59 39.675 58.325 39 56.645 39Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
