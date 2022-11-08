@@ -18,7 +18,7 @@ import SinglePricing from "components/cards/pricing-single"
 import avatar1 from "assets/images/findprospects.svg";
 import avatar2 from "assets/images/WrittenMessages.svg";
 import avatar3 from "assets/images/Outreachicon.svg";
-import avatar4 from "assets/images/closedeals.svg";
+import avatar4 from "assets/images/CloseDeals.svg";
 import avatar5 from 'assets/images/ProspectList.svg';
 import avatar6 from 'assets/images/ABTesting.svg';
 import avatar7 from 'assets/images/PersonalizedOutreach.svg';
