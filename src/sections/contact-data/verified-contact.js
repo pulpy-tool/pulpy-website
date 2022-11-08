@@ -2,8 +2,8 @@
 import { jsx, Box, Grid, Flex, Container, Image, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import { LearnMore } from 'components/link';
-import verified from '../assets/images/verified.svg';
-import check from '../assets/images/icons/check-circle.png';
+import verified from '../../assets/images/verified.svg';
+import check from '../../assets/images/icons/check-circle.png';
 
 const data = [
   {
