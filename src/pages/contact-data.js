@@ -8,7 +8,7 @@ import theme from "theme";
 import SEO from "components/seo";
 import Layout from "components/layout";
 import InnerBanner from "components/banner/banner";
-import illustration from "assets/images/pulpyillustration.svg";
+import illustration from "../assets/images/pulpyillustration.svg";
 import VerifiedContact from "sections/contact-data/verified-contact"
 import ProspectData from "sections/contact-data/prospect-data"
 import EntireCommunity from "sections/contact-data/entire-community"

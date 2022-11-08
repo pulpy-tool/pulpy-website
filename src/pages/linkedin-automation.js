@@ -5,7 +5,7 @@ import theme from "theme";
 import SEO from "components/seo";
 import Layout from "components/layout";
 import InnerBanner from "components/banner/banner";
-import illustration from "assets/images/linkedin-automate.svg";
+import illustration from "../assets/images/linkedin-automate.svg";
 import LinkedInAutoPilot from "sections/linkedin-automation/autopilot";
 import LinkedInAutoIntegration from "sections/linkedin-automation/integrate";
 import LinkedInAutoFaq from "sections/linkedin-automation/faq";

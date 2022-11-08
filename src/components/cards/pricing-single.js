@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Grid, Flex, Container, Button, Image, Text } from "theme-ui";
-import check from "assets/images/icons/check-circle.png";
+import check from "../../assets/images/icons/check-circle.png";
 
 const data = [
   {

@@ -15,17 +15,17 @@ import SectionHeading from "components/section-heading";
 import IconBoxOne from "components/cards/icon-box-one";
 import IconBoxTwo from "components/cards/icon-box-two";
 import SinglePricing from "components/cards/pricing-single"
-import avatar1 from "assets/images/findprospects.svg";
-import avatar2 from "assets/images/WrittenMessages.svg";
-import avatar3 from "assets/images/Outreachicon.svg";
-import avatar4 from "assets/images/CloseDeals.svg";
-import avatar5 from 'assets/images/ProspectList.svg';
-import avatar6 from 'assets/images/ABTesting.svg';
-import avatar7 from 'assets/images/PersonalizedOutreach.svg';
-import avatar8 from 'assets/images/DataDriven.svg';
-import avatar9 from 'assets/images/Hotleads.svg';
-import avatar10 from 'assets/images/DedicatedManages.svg';
-import avatar11 from 'assets/images/SellLinkedIn.svg';
+import avatar1 from "../assets/images/findprospects.svg";
+import avatar2 from "../assets/images/WrittenMessages.svg";
+import avatar3 from "../assets/images/Outreachicon.svg";
+import avatar4 from "../assets/images/CloseDeals.svg";
+import avatar5 from '../assets/images/ProspectList.svg';
+import avatar6 from '../assets/images/ABTesting.svg';
+import avatar7 from '../assets/images/PersonalizedOutreach.svg';
+import avatar8 from '../assets/images/DataDriven.svg';
+import avatar9 from '../assets/images/Hotleads.svg';
+import avatar10 from '../assets/images/DedicatedManages.svg';
+import avatar11 from '../assets/images/SellLinkedIn.svg';
 import { rgb, rgba } from 'polished';
 
 const iconboxonedata = [

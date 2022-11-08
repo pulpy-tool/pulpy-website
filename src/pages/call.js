@@ -14,7 +14,7 @@ import theme from "theme";
 import SEO from "components/seo";
 import Layout from "components/layout";
 import InnerBanner from "components/banner/banner";
-import Callillustrate from "assets/images/callillustration.svg";
+import Callillustrate from "../assets/images/callillustration.svg";
 import { rgba } from "polished";
 import { useState, useEffect } from "react";
 
