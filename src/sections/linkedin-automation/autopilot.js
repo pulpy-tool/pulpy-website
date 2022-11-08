@@ -2,7 +2,7 @@
 import { jsx, Box, Grid, Flex, Container, Image, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import { LearnMore } from 'components/link';
-import autopilot from 'assets/images/autopilot.svg';
+import autopilot from '../../assets/images/autopilot.svg';
 
 
 

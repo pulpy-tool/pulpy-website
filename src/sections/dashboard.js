@@ -10,7 +10,7 @@ import Cog from 'components/icons/cog';
 import PieChart from 'components/icons/pie-chart';
 import Suitcase from 'components/icons/suitcase';
 import BarChart from 'components/icons/bar-chart';
-import dashboard from 'assets/images/dashboard.png';
+import dashboard from '../assets/images/dashboard.png';
 
 const data = [
   {

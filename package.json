@@ -9,9 +9,8 @@
     "export": "next export"
   },
   "dependencies": {
-    "@aws-sdk/client-ses": "^3.201.0",
+    
     "@nextui-org/react": "^1.0.0-beta.10",
-    "aws-sdk": "^2.1243.0",
     "framer-motion": "^2.9.5",
     "next": "^10.0.3",
     "next-compose-plugins": "^2.2.1",

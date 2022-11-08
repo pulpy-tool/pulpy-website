@@ -2,8 +2,8 @@
 import { jsx, Box, Grid, Flex, Container, Image, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import { LearnMore } from 'components/link';
-import OrgChart from 'assets/images/OrgChart-1.png';
-import check from 'assets/images/icons/check-circle.png';
+import OrgChart from '../assets/images/OrgChart-1.png';
+import check from '../assets/images/icons/check-circle.png';
 
 const data = [
   {

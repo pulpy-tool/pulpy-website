@@ -3,7 +3,7 @@ import { jsx, Box, Container, Grid } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Accordion from 'components/accordion/accordion';
 import Image from 'components/image';
-import leadgeneration from 'assets/images/leadgeneration.svg';
+import leadgeneration from '../assets/images/leadgeneration.svg';
 
 const data = [
   {
