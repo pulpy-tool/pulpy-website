@@ -54,12 +54,10 @@ const ContactStats = () => {
   return (
     <section sx={styles.section}>
       <Container>
-        <Grid sx={styles.grid}>
-          <SectionHeading
+      <SectionHeading
               sx={styles.heading}
               title="The World's Smartest B2B Contact Data"
             />
-        </Grid>
         <Grid sx={styles.grid.Three}>
         {outreachdata?.map((data) => (
                 <IconBoxCenter data={data} sx={styles.IconBoxOne} />
@@ -92,14 +90,14 @@ const styles = {
     },
   },
   heading: {
-    maxWidth: ['auto', null, null, '950px', 'auto'],    
+    maxWidth: '950px !important', 
     mb: ['20px'],
-    ml: [0],
+    
     h2: {
-      color: 'heading',
+      color: 'heading',        
       fontSize: ['24px', null, null, '36px', '31px', 10, 40],
       lineHeight: [1.33, 1.33, 1.26, null, 1.5, 1.26],
-      textAlign:'center',
+      margin: '0 auto',
       letterSpacing: '-1px',
       letterSpacing: '-1px',
     },

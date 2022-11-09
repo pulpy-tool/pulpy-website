@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Router from 'next/router';
 import { initGA, logPageView } from 'analytics';
 import 'rc-drawer/assets/index.css';
 import 'rc-tabs/assets/index.css';
 import 'swiper/swiper-bundle.css';
-import 'assets/css/styles.css';
 import NProgress from 'nprogress'; //nprogress module
 import 'nprogress/nprogress.css'; //styles of nprogress
 
