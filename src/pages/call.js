@@ -22,7 +22,7 @@ import { useState, useEffect } from "react";
 export default function FreeConsultation({ buttonLabel, ...props }) {
   
   
-
+  
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [companyname, setCompanyname] = useState("");
@@ -62,34 +62,34 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
     setMobile(inputValue);
   }
 
-  // const handleSubmit = (e) => { 
-  //   e.preventDefault()
-  //   console.log('Sending')
-  // let data = {
-  //   fullname,
-  //   }
-  // fetch('./api/call', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Accept': 'application/json, text/plain, */*',
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify(data)
-  //   }).then((res) => {
-  //     console.log('Response received')
-  //     if (res.status === 200) {
-  //       console.log('Response succeeded!')
-  //       setSubmit(true)
-  //       setFullname('')
-  //       setEmail('')       
-  //       setCompaniesize('')
-  //       setCompanyname('')
-  //       setMobile('')
-  //       setTitle('')
-  //     }
-  //   })
-  // };
-  
+  const handleSubmit = (e) => { 
+    e.preventDefault()
+    console.log('Sending')
+  let data = {
+    fullname,
+    }
+  fetch('./api/call', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setSubmit(true)
+        setFullname('')
+        setEmail('')       
+        setCompaniesize('')
+        setCompanyname('')
+        setMobile('')
+        setTitle('')
+      }
+    })
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -221,8 +221,8 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
                 />
               </Grid>
               <Grid>
-                {/* <Button type="submit" onClick={(e)=>{handleSubmit(e)}}>{buttonLabel ?? "Get Started"}</Button> */}
-                <Button type="submit">{buttonLabel ?? "Get Started"}</Button>
+                <Button type="submit" onClick={(e)=>{handleSubmit(e)}}>{buttonLabel ?? "Get Started"}</Button>
+                {/* <Button type="submit">{buttonLabel ?? "Get Started"}</Button> */}
               </Grid>
             </Grid>
           </Container>
