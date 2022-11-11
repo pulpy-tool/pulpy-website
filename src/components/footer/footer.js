@@ -38,13 +38,14 @@ const footerLinksOne = [
   },
 ];
 const footerLinksTwo = [
-  {
-    path: "contact-data",
-    label: "Contact Data",
-  },
+  
   {
     path: "linkedin-automation",
     label: "LinkedIn Automation",
+  },
+  {
+    path: "contact-data",
+    label: "Contact Data",
   },
 ];
 const footerLinksThree=[

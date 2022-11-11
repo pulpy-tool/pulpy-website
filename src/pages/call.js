@@ -67,6 +67,7 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
     console.log('Sending')
   let data = {
     fullname,
+    email,
     }
   fetch('./api/call', {
       method: 'POST',
