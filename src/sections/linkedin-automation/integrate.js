@@ -23,7 +23,7 @@ const LinkedInAutoIntegration = () => {
             <Box sx={styles.features}>
               <Text>Crush your LinkedIn outreach campaigns by building smooth sales funnel by automating the message sequence with pulpy.</Text>
             </Box>
-            <LearnMore label="Explore the Features" path="#!" />
+            
           </Box>
           
         </Grid>

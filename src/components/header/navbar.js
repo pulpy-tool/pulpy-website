@@ -2,12 +2,11 @@ import { Navbar, Dropdown, Button, Link } from "@nextui-org/react";
 import { icons } from "./icon";
 import Logo from "components/logo";
 import Router from "next/router";
-import LinkedinAutomation from "pages/linkedin-automation";
 
 export default function NextNavbar() {
   const handler = (route) =>
     Router.push({
-      pathname: `/${route}`,
+      href: `/${route}`,
     });
   const collapseItems = [
     {
@@ -95,7 +94,7 @@ export default function NextNavbar() {
               },
             }}
           >
-            <Dropdown.Item key="Product">Product</Dropdown.Item>
+            <Dropdown.Item key="Product">Products</Dropdown.Item>
             <Dropdown.Item
               key="linkedin-automation"
               showFullDescription
@@ -103,7 +102,7 @@ export default function NextNavbar() {
               icon={icons.scale}
               Link="linkedin-automation"
             >
-              <Navbar.Link href="/linkedin-automation" color="inherit">
+              <Navbar.Link href="/linkedin-automation" onClick={() => handler()} color="inherit">
           LinkedIn Automation
         </Navbar.Link>
             </Dropdown.Item>
@@ -114,7 +113,7 @@ export default function NextNavbar() {
               description="Create your ideal filter based prospecting list"
               icon={icons.activity}
             >
-              <Navbar.Link href="/contact-data" color="inherit">
+              <Navbar.Link href="/contact-data" onClick={() => handler()} color="inherit">
               Contact Data
         </Navbar.Link>
               
@@ -127,17 +126,17 @@ export default function NextNavbar() {
               description="Scale your LinkedIn leads to predictably generate more revenue."
               icon={icons.flash}
             >
-               <Navbar.Link href="/linkedin-lead" color="inherit">
+               <Navbar.Link href="/linkedin-lead" onClick={() => handler()} color="inherit" >
                LinkedIn Services
         </Navbar.Link>
               
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <Navbar.Link href="about-us" color="inherit">
+        <Navbar.Link href="about-us" onClick={() => handler()} color="inherit">
           About Us
         </Navbar.Link>
-        <Navbar.Link href="call" color="inherit">
+        <Navbar.Link href="call" onClick={() => handler()} color="inherit">
           Contact Us
         </Navbar.Link>
       </Navbar.Content>
@@ -152,6 +151,7 @@ export default function NextNavbar() {
               backgroundColor: "#FF8140",
             }}
             as={Link}
+            onClick={() => handler()}
             href="call"
           >
             Free Consulation

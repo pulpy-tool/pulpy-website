@@ -18,7 +18,7 @@ export default function (req, res) {
     
     const mailData = {
         from: '"Contact" <help@pulpy.io>',
-        to: 'help@pulpy.io',
+        to: email,
         subject: 'Welcome to Pulpy',
         //text: req.body.message + " | Sent from: " + req.body.email,
         html: `<!doctype html>

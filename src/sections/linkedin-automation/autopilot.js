@@ -25,7 +25,7 @@ const LinkedInAutoPilot = () => {
 
 Work on multiple lead generation campaigns simultaneously and get more leads by setting up your own sales funnel as Pulpy works on the cloud and provide complete automation.</Text>
             </Box>
-            <LearnMore label="Explore more" path="#!" />
+            
           </Box>
           
         </Grid>
