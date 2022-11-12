@@ -10,6 +10,7 @@ import {
   Input,
   Container,
 } from "theme-ui";
+import { Text } from "@nextui-org/react";
 import theme from "theme";
 import SEO from "components/seo";
 import Layout from "components/layout";
@@ -30,7 +31,11 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
   const [whatsgoal, setWhatsgoal] = useState("What is your Goal?");
   const [title, setTitle] = useState("");
   const [mobile, setMobile] = useState("");
-  const [submit, setSubmit] = useState("");
+
+  const [errors, setErrors] = useState({});
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailureMessage, setShowFailureMessage] = useState(false);
 
 
   let handleFullNameChange =(e) =>{
@@ -62,33 +67,78 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
     setMobile(inputValue);
   }
 
-  const handleSubmit = (e) => { 
-    e.preventDefault()
-    console.log('Sending')
-  let data = {
-    fullname,
-    email,
+  const handleValidation =(e) =>{
+    let tempErrors = {};
+    let isValid = true;
+
+    if (fullname.length <= 0){
+      tempErrors["fullname"] = true;
+      isValid = false;
     }
-  fetch('./api/call', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    }).then((res) => {
-      console.log('Response received')
-      if (res.status === 200) {
-        console.log('Response succeeded!')
-        setSubmit(true)
-        setFullname('')
-        setEmail('')       
-        setCompaniesize('')
-        setCompanyname('')
-        setMobile('')
-        setTitle('')
+    if (email.length <= 0){
+      tempErrors["email"] = true;
+      isValid = false;
+    }
+    if (mobile.length <= 0){
+      tempErrors["mobile"] = true;
+      isValid = false;
+    }
+
+    setErrors({...tempErrors});
+
+    console.log("errors", errors);
+    return isValid;
+  };
+
+  const handleSubmit = async (e) => { 
+    e.preventDefault()
+
+    let isValidForm = handleValidation();
+    
+    let data = {
+      fullname,
+      email,
       }
-    })
+
+    if(isValidForm) {
+      
+      const res = await fetch('./api/call', {
+        body: JSON.stringify(data),        
+        headers: {
+          // 'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        method: 'POST',
+      });
+      
+      const { error } = await res.json();
+
+      if (error) {
+        console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        
+
+        // Reset form fields
+        setFullname("");
+        setEmail("");
+        return;
+      }
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+
+       
+        setFullname("");
+        setEmail("");     
+        setCompaniesize("");
+        setCompanyname("");
+        setMobile("");
+        setTitle("");
+      
+    }
+    console.log(fullname, email);
+ 
+  
   };
 
   return (
@@ -110,7 +160,7 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
             img={Callillustrate}
           />
         </Box>
-        <Box as="form" sx={styles.section} method="post" >
+        <Box as="form" onClick={(e)=>{handleSubmit(e)}} sx={styles.section} method="post" >
           <Container>
             <Grid >
               <Grid>
@@ -122,6 +172,9 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
                   required
                   
                 />
+                {errors?.email && (
+            <Text color="error">Email cannot be empty.</Text>
+          )}
               </Grid>
 
               <Grid>
@@ -171,6 +224,9 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
                   value={fullname}
                   onChange={handleFullNameChange}
                 />
+                {errors?.fullname && (
+            <Text color="error">Fullname cannot be empty.</Text>
+          )}
               </Grid>
               <Grid>
                 <Input
@@ -220,10 +276,23 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
                   value={mobile}
                   onChange={handleMobileChange}
                 />
+                {errors?.mobile && (
+            <Text color="error">Mobile No. cannot be empty.</Text>
+          )}
               </Grid>
               <Grid>
-                <Button type="submit" onClick={(e)=>{handleSubmit(e)}}>{buttonLabel ?? "Get Started"}</Button>
+                <Button type="submit" >{buttonLabel ?? "Get Started"}</Button>
                 {/* <Button type="submit">{buttonLabel ?? "Get Started"}</Button> */}
+                {showSuccessMessage && (
+             <Text color="success">
+                Thankyou! Your Message has been delivered.
+              </Text>
+            )}
+            {showFailureMessage && (
+              <Text color="error">
+                Oops! Something went wrong, please try again.
+                </Text>
+            )}
               </Grid>
             </Grid>
           </Container>

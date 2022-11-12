@@ -33,7 +33,7 @@ export default function (req, res) {
               <p>Thank you for your request! Sam will reach out to you shortly to discuss the needs of your business.</p>
               <p>We look forward to building your business to the next level.</p>              
               <p>Best,<br />Sam</p>
-
+              <b>Pulpy</b>
           </body>
         </html>`
     }
@@ -45,7 +45,7 @@ export default function (req, res) {
           console.log(info);
     })
   
-    console.log(req.body)
+    
     
     res.send('success')
   }
