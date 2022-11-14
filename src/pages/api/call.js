@@ -47,5 +47,5 @@ export default function (req, res) {
   
     
     
-    res.send('success')
+    return res.status(200).json({ error: "" });
   }

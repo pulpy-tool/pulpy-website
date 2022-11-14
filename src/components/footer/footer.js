@@ -190,7 +190,7 @@ const styles = {
     p: 0,
     li: {
       "+ li": {
-        ml: [3, null, null, null, 0],
+        ml: [0, null, null, null, 0],
         lineHeight: 2.85,
       },
       a: {
@@ -219,7 +219,7 @@ const styles = {
   footerNav: {
     listStyle: "none",
     display: "flex",
-    flexDirection: ["column", null, null, null, "row"],
+    flexDirection: ["row", "row", "row", "row", "row"],
     mt: [2],
     m: ["25px 0 0", null, null, null, "25 0 0"],
     p: 0,

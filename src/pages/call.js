@@ -86,7 +86,6 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
 
     setErrors({...tempErrors});
 
-    console.log("errors", errors);
     return isValid;
   };
 
@@ -105,7 +104,7 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
       const res = await fetch('./api/call', {
         body: JSON.stringify(data),        
         headers: {
-          // 'Accept': 'application/json, text/plain, */*',
+          'Accept': 'application/json, text/plain, */*',
           'Content-Type': 'application/json'
         },
         method: 'POST',
@@ -121,12 +120,16 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
 
         // Reset form fields
         setFullname("");
-        setEmail("");
+        setEmail("");     
+        setCompaniesize("");
+        setCompanyname("");
+        setMobile("");
+        setTitle("");
         return;
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
-       
+       //Reset form fields
         setFullname("");
         setEmail("");     
         setCompaniesize("");
@@ -135,7 +138,7 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
         setTitle("");
       
     }
-    console.log(fullname, email);
+    
  
   
   };

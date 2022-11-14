@@ -12,7 +12,7 @@ const InnerBanner = ({ title, description, img, buttonLabel, video, ...props }) 
             <Text as="p" sx={styles.description}>
               {description}
             </Text>
-            <Button>{buttonLabel}</Button>
+            {/* <Button >{buttonLabel}</Button> */}
           </Box>
           <Flex as="figure" sx={styles.bannerImage}>
             {<Image src={img} alt="illustration" />}

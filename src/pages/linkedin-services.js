@@ -119,7 +119,7 @@ export default function LinkedinPage() {
             </div>
           }
           img={illustration}
-          buttonLabel="Lets Talk"
+          buttonLabel={"Lets Talk"}
         />
         <SectionHeading
           sx={styles.heading}

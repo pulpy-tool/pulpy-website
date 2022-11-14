@@ -100,9 +100,9 @@ export default function NextNavbar() {
               showFullDescription
               description="Build sales funnel using a variety of LinkedIn actions"
               icon={icons.scale}
-              Link="linkedin-automation"
+              Link="linkedin-automation"                        
             >
-              <Navbar.Link href="/linkedin-automation" onClick={() => handler()} color="inherit">
+              <Navbar.Link href="/linkedin-automation"  onClick={() => handler()}     color="inherit">
           LinkedIn Automation
         </Navbar.Link>
             </Dropdown.Item>
@@ -126,7 +126,7 @@ export default function NextNavbar() {
               description="Scale your LinkedIn leads to predictably generate more revenue."
               icon={icons.flash}
             >
-               <Navbar.Link href="/linkedin-lead" onClick={() => handler()} color="inherit" >
+               <Navbar.Link href="/linkedin-services" onClick={() => handler()} color="inherit" >
                LinkedIn Services
         </Navbar.Link>
               

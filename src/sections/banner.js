@@ -21,27 +21,19 @@ const Banner = () => {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h1">
-            Accelerate your business and
-              <Typewriter
+            Accelerate your business and<br/>
+            your outreach game with pulpy
+              {/* <Typewriter
                 options={{
                   strings: ["your outreach game with pulpy"],
                   autoStart: true,
                   loop: true,
                 }}
-              />
+              /> */}
             </Heading>
 
             <SubscriptionForm sx={styles.subscriptionForm} />
-            <Flex sx={styles.sponsoredBy}>
-              <Text as="span">Sponsored by:</Text>
-              <Flex sx={styles.sponsor}>
-                {logos?.map((logo, index) => (
-                  <Flex as="figure" key={index}>
-                    <Image src={logo.src} alt={logo.name} />
-                  </Flex>
-                ))}
-              </Flex>
-            </Flex>
+            
           </Box>
           <Flex as="figure" sx={styles.bannerImage}>
             <Image src={illustration} alt="illustration" />
