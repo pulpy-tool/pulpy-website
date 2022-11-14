@@ -42,11 +42,11 @@ export default function SEO({
     },
   ].concat(meta);
   return (
-    <Head>
+    <Head>      
       <title>{title}</title>
       {metaData.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />
-      ))}
+      ))}      
     </Head>
   );
 }

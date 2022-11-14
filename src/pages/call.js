@@ -126,7 +126,6 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
-
        
         setFullname("");
         setEmail("");     
