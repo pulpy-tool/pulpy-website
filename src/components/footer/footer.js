@@ -48,6 +48,14 @@ const footerLinksTwo = [
     label: "Contact Data",
   },
 ];
+const footerLinksServices = [
+  
+  {
+    path: "linkedin-services",
+    label: "LinkedIn Services",
+  },
+  
+];
 const footerLinksThree=[
   {
     path: "terms-conditions",
@@ -107,6 +115,14 @@ export default function Footer() {
                 </li>
               ))}
             </Box>
+            <Text as="h6">Services</Text>
+            <Box as="ul" sx={styles.footerMenu}>
+              {footerLinksServices?.map((item, index) => (
+                <li key={index}>
+                  <NavLink path={item?.path} label={item?.label} onClick={() => handler(item?.path)} />
+                </li>
+              ))}
+            </Box>
           </Box>
         </Grid>
         <Grid sx={styles.grid.Three}>
@@ -143,12 +159,14 @@ const styles = {
       fontSize: 4,
       fontWeight: "900",
       lineHeight: "18px",
+      marginBottom: "1.5rem",
     },
     h6: {
       color: "white",
       fontSize: 4,
       fontWeight: "900",
       lineHeight: "18px",
+      marginBottom: "1.5rem",
     },
     a: {
       color: "white",
@@ -186,7 +204,7 @@ const styles = {
   footerMenu: {
     listStyle: "none",
     mt: [2],
-    mb: [10],
+    mb: [2],
     p: 0,
     li: {
       "+ li": {

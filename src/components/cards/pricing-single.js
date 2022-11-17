@@ -106,7 +106,7 @@ const SinglePricing = () => {
             </Box>
           <Box sx={styles.rightContent}>
             <Box sx={styles.cards}>
-                <Text as="h2">$ 1999</Text>
+                <Text as="h2">$ 1999/Mo</Text>
                 <Button>Get Started Today</Button>
             </Box>
           </Box>
@@ -153,7 +153,7 @@ const styles = {
     lineHeight: 1.51,
     h2: {
         fontWeight: 900,
-        fontSize: [50, null, null, null, 72],
+        fontSize: [50, null, null, null, 55],
         lineHeight: 1.5,
         color: "textSecondary",
         textAlign: "center",
