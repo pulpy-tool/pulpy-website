@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Grid, Flex, Container, Image, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
-import { LearnMore } from 'components/link';
 import pulpywork from '../assets/images/howpulpy.svg';
 import check from '../assets/images/icons/check-circle.png';
 
@@ -34,11 +33,12 @@ const data = [
 
 const AppFeature = () => {
   return (
-    <section sx={styles.section}>
+   
+    <section sx={styles.section} >
       <Container>
         <Grid sx={styles.grid}>
         <Box sx={styles.illustration}>
-            <Image src={pulpywork} alt="workHard" />
+            <Image src={pulpywork} alt="workHard"/>
           </Box>
           <Box sx={styles.rightContent}>
             <SectionHeading
@@ -54,7 +54,7 @@ const AppFeature = () => {
                 </Flex>
               ))}
             </Box>
-            <LearnMore label="Explore more" path="#!" />
+            
           </Box>
           
         </Grid>
@@ -117,7 +117,7 @@ const styles = {
     },
   },
   illustration: {
-    mb: [0, null, null, null, '-150px', '-260px'],
+    
     mt: [0],
     zIndex: '-1',
     img: {

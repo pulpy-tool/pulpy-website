@@ -3,7 +3,7 @@ import { jsx, Box, Container, Grid } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Accordion from 'components/accordion/accordion';
 import Image from 'components/image';
-import leadgeneration from '../assets/images/leadgeneration.svg';
+import leadgeneration from '../assets/images/leadservices.svg';
 
 const data = [
   {
@@ -86,16 +86,21 @@ const styles = {
         maxWidth: [24, null, null, 30, 25, null, '100%'],
         top: ['4px', '8px', null, null, '4px', '8px'],
       },
+      lineHeight: '1.2'
     },
     p: {
       fontSize: [null, null, null, 2],
+      lineHeight: '1.8',
+      maxWidth:'100%',
     },
   },
   illustration: {
     mb: [-6, null, null, -8, 0],
     img: {
       maxWidth: [null, null, null, "50%", "100%"],
-      m: [null, null, null, "0 auto", 0],
+      m: "0 auto",
+      display:'table',
+      width: '450px',
     },
   },
   accordionGroup: {

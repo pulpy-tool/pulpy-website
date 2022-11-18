@@ -39,13 +39,13 @@ const iconboxonedata = [
     id: 2,
     avatar: avatar2,
     heading: "Write Messages",
-    text: "Send out cold emails that are concise, personable, and effective",
+    text: "Write and send cold outreach messages on LinkedIn that are concise, personalised, and effective",
   },
   {
     id: 3,
     avatar: avatar3,
     heading: "Execute Outreach",
-    text: "Every month, send personalised messages to thousands of your prospective leads.",
+    text: "Every month, send personalised messages to thousands of your prospective leads on Linkedin",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const outreachdata = [
   {
     id: 1,
     avatar: avatar5,
-    heading:'Prospects List Building',
+    heading:'Building Prospects List',
   },  
   {
     id: 2,
@@ -81,19 +81,19 @@ const leaddata = [
     id: 1,
     avatar: avatar9,
     heading: "Attract hundreds of hot leads on LinkedIn",
-    text: "Following the launch of your campaign, you may anticipate receiving dozens or even hundreds of hot leads each month that are created entirely automatically.",
+    text: "You may anticipate receiving dozens or even hundreds of hot leads each month that are generated completely on auto-pilot, following the launch of your lead generation campaign. ",
   },
   {
     id: 2,
     avatar: avatar10,
     heading: "Dedicated Account Managers",
-    text: "Our dedication to your success will be demonstrated via our support through weekly reports, monthly strategy calls, and continuous campaign enhancements.",
+    text: "We demonstrate our dedication to your success via our support through weekly reports, monthly strategy calls, continuous campaign enhancements, and LinkedIn Optimization.",
   },
   {
     id: 3,
     avatar: avatar11,
     heading: "Learn how to sell effectively on LinkedIn",
-    text: `We're more than simply a tool for generating leads on LinkedIn. You'll learn all of our tricks and techniques for completing transactions on LinkedIn.`,
+    text: `We're more than simply a tool for generating leads on LinkedIn. You'll learn all our tricks and techniques for completing transactions on LinkedIn`,
   },
 ];
 
@@ -111,11 +111,8 @@ export default function LinkedinPage() {
           title="#1 LinkedIn Lead Generation Agency"
           description={
             <div>
-              Scale your LinkedIn leads to predictably generate more revenue,
-              100% done for you. <br />
-              Pulpy sends tested, tailored messages to your dream clients on
-              LinkedIn and receives favourable answers directly to your email by
-              using data from hundreds of outbound B2B campaigns.
+              Get <b>More leads on linkedin</b> and scale your sales and revenue. 
+Pulpy sends tested and tailored messages to your dream prospects and clients Linkedin and receives favourable answers directly to your Linkedin inbox by using data from hundreds of outbound B2B campaigns
             </div>
           }
           img={illustration}
@@ -123,13 +120,11 @@ export default function LinkedinPage() {
         />
         <SectionHeading
           sx={styles.heading}
-          title="How we generate leads for client's"
+          title="How we generate leads on LinkedIn for clients"
           description={
             <div>
-              We leverage high-performing data from hundreds of successfully
-              completed LinkedIn campaigns across all industries to target and
-              engage your most qualified decision makers, pushing them straight
-              into your sales funnel.
+              We leverage high-performing data from hundreds of successfully completed LinkedIn Lead Generation campaigns across all industries to target and engage your most qualified decision makers, pushing them straight into your sales funnel.
+
             </div>
           }
         />
@@ -172,16 +167,13 @@ export default function LinkedinPage() {
           sx={styles.heading}
           title={
             <div>
-              Utilize the best LinkedIn marketing specialists
-              <br />
-              to generate sales/leads
+              Utilize the best LinkedIn Experts and Lead Generation Specialists to 
+              generate leads and close more deals
             </div>
           }
           description={
             <div>
-              Continuous improvement is required to create the ideal LinkedIn
-              outreach approach. Let our professionals assist you in finding
-              untapped sales prospects.
+              Continuous improvement is required to create the ideal LinkedIn outreach approach that generates leads on autopilot. Let our LinkedIn Lead Generation experts assist you in finding the right yet untapped prospects.
             </div>
           }
         />

@@ -7,6 +7,7 @@ import Banner from 'sections/banner';
 import PremiumFeature from 'sections/premium-feature';
 import AppFeature from 'sections/app-feature';
 import Subscribe from 'sections/subscribe';
+import WorkFlow from 'sections/workflow';
 
 export default function IndexPage() {
   return (
@@ -16,7 +17,8 @@ export default function IndexPage() {
           title="Pulpy | LinkedIn Automation and Prospect Tool"
           description="Pulpy is the most advanced LinkedIn Automation Tool * Start Free Trail Now"
         />
-        <Banner />          
+        <Banner />   
+        <WorkFlow/>       
         <AppFeature />
         <PremiumFeature />       
         <Subscribe />

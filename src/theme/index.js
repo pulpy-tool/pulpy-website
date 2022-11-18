@@ -26,6 +26,8 @@ export default {
       },
     },
   },
+  
+  
   fonts: {
     body: 'DM Sans, sans-serif',
     // body:
@@ -309,6 +311,21 @@ export default {
       fontFamily: 'body',
       lineHeight: 'body',
       fontWeight: 'body',
+      overflowY: 'scroll',
+      '&::-webkit-scrollbar':{
+        width: '8px',
+        backgroundColor: '#f5f5f5',
+      },
+      '&::-webkit-scrollbar-track':{
+        backgroundColor: '#f5f5f5',
+      },
+      '&::-webkit-scrollbar-thumb':{
+        backgroundColor:'#161a37e8',
+        borderRadius: '5px',
+      }
+    },
+    dscrollbar:{
+      
     },
     // h1-h6 Heading styles
     h1: {
