@@ -19,6 +19,8 @@
     "next-videos": "1.5.0",
     "nodemailer": "^6.8.0",
     "nprogress": "^0.2.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
     "polished": "^4.0.5",
     "rc-drawer": "^4.1.0",
     "rc-tabs": "^11.7.2",
@@ -30,6 +32,8 @@
     "react-responsive": "^8.2.0",
     "react-scroll": "^1.8.1",
     "react-stickynode": "^3.0.4",
+    "sequelize": "^6.25.6",
+    "sequelize-auto-migrations": "^1.0.3",
     "swiper": "^6.3.5",
     "theme-ui": "^0.3.4",
     "typewriter-effect": "^2.19.0"

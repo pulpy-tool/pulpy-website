@@ -21,9 +21,9 @@ import { useState, useEffect } from "react";
 
 
 export default function FreeConsultation({ buttonLabel, ...props }) {
-  
-  
-  
+
+
+
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [companyname, setCompanyname] = useState("");
@@ -38,71 +38,74 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
   const [showFailureMessage, setShowFailureMessage] = useState(false);
 
 
-  let handleFullNameChange =(e) =>{
-    let inputValue = e.target.value;
+  let handleFullNameChange = (e) => {
+    let inputValue = e?.target?.value ?? "";
     setFullname(inputValue);
   }
-  let handleemailChange =(e) =>{
-    let inputValue = e.target.value;
+  let handleemailChange = (e) => {
+    let inputValue = e?.target?.value ?? "";
     setEmail(inputValue);
   }
-  let handleCompanyChange =(e) =>{
-    let inputValue = e.target.value;
+  let handleCompanyChange = (e) => {
+    let inputValue = e?.target?.value ?? "";
     setCompanyname(inputValue);
   }
-  let handleCompanySizeChange =(e) =>{
-    let inputValue = e.target.value;
+  let handleCompanySizeChange = (e) => {
+    let inputValue = e?.target?.value ?? "";
     setCompaniesize(inputValue);
   }
-  let handleWhatsGoalChange =(e) =>{
-    let inputValue = e.target.value;
+  let handleWhatsGoalChange = (e) => {
+    let inputValue = e?.target?.value ?? "";
     setWhatsgoal(inputValue);
   }
-  let handleTitleChange =(e) =>{
-    let inputValue = e.target.value;
+  let handleTitleChange = (e) => {
+    let inputValue = e?.target?.value ?? "";
     setTitle(inputValue);
   }
-  let handleMobileChange =(e) =>{
-    let inputValue = e.target.value;
+  let handleMobileChange = (e) => {
+    let inputValue = e?.target?.value ?? "";
     setMobile(inputValue);
   }
 
-  const handleValidation =(e) =>{
+  const handleValidation = (e) => {
     let tempErrors = {};
     let isValid = true;
 
-    if (fullname.length <= 0){
+    if (fullname.length <= 0) {
       tempErrors["fullname"] = true;
       isValid = false;
     }
-    if (email.length <= 0){
+    if (email.length <= 0) {
       tempErrors["email"] = true;
       isValid = false;
     }
-    if (mobile.length <= 0){
+    if (mobile.length <= 0) {
       tempErrors["mobile"] = true;
       isValid = false;
     }
-
-    setErrors({...tempErrors});
+    setErrors({ ...tempErrors });
 
     return isValid;
   };
 
-  const handleSubmit = async (e) => { 
+  const handleSubmit = async (e) => {
     e.preventDefault()
-
+  
     let isValidForm = handleValidation();
-    
     let data = {
       fullname,
       email,
-      }
-
-    if(isValidForm) {
-      
+      companyname,
+      companysize,
+      whatsgoal,
+      title,
+      mobile
+    }
+    console.log(data);
+    // return
+    if (isValidForm) {
       const res = await fetch('./api/call', {
-        body: JSON.stringify(data),        
+        body: JSON.stringify(data),
         headers: {
           'Accept': 'application/json, text/plain, */*',
           'Content-Type': 'application/json'
@@ -118,11 +121,11 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
         console.log(error);
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
-        
+
 
         // Reset form fields
         setFullname("");
-        setEmail("");     
+        setEmail("");
         setCompaniesize("");
         setCompanyname("");
         setMobile("");
@@ -131,18 +134,18 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
       }
       setShowSuccessMessage(true);
       setShowFailureMessage(false);
-       //Reset form fields
-        setFullname("");
-        setEmail("");     
-        setCompaniesize("");
-        setCompanyname("");
-        setMobile("");
-        setTitle("");
-      
+      //Reset form fields
+      setFullname("");
+      setEmail("");
+      setCompaniesize("");
+      setCompanyname("");
+      setMobile("");
+      setTitle("");
+
     }
-    
- 
-  
+
+
+
   };
 
   return (
@@ -164,7 +167,7 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
             img={Callillustrate}
           />
         </Box>
-        <Box as="form" onClick={(e)=>{handleSubmit(e)}} sx={styles.section} method="post" >
+        <Box as="form" onSubmit={(e) => { handleSubmit(e) }} sx={styles.section} method="post" >
           <Container>
             <Grid >
               <Grid>
@@ -174,11 +177,11 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
                   value={email}
                   onChange={handleemailChange}
                   required
-                  
+
                 />
                 {errors?.email && (
-            <Text color="error">Email cannot be empty.</Text>
-          )}
+                  <Text color="error">Email cannot be empty.</Text>
+                )}
               </Grid>
 
               <Grid>
@@ -229,8 +232,8 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
                   onChange={handleFullNameChange}
                 />
                 {errors?.fullname && (
-            <Text color="error">Fullname cannot be empty.</Text>
-          )}
+                  <Text color="error">Fullname cannot be empty.</Text>
+                )}
               </Grid>
               <Grid>
                 <Input
@@ -281,22 +284,22 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
                   onChange={handleMobileChange}
                 />
                 {errors?.mobile && (
-            <Text color="error">Mobile No. cannot be empty.</Text>
-          )}
+                  <Text color="error">Mobile No. cannot be empty.</Text>
+                )}
               </Grid>
               <Grid>
                 <Button type="submit" >{buttonLabel ?? "Get Started"}</Button>
                 {/* <Button type="submit">{buttonLabel ?? "Get Started"}</Button> */}
                 {showSuccessMessage && (
-             <Text color="success">
-                Thankyou! Your Message has been delivered.
-              </Text>
-            )}
-            {showFailureMessage && (
-              <Text color="error">
-                Oops! Something went wrong, please try again.
-                </Text>
-            )}
+                  <Text color="success">
+                    Thankyou! Your Message has been delivered.
+                  </Text>
+                )}
+                {showFailureMessage && (
+                  <Text color="error">
+                    Oops! Something went wrong, please try again.
+                  </Text>
+                )}
               </Grid>
             </Grid>
           </Container>
