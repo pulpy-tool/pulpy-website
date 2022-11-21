@@ -23,7 +23,7 @@ const styles = {
     mt: [null, null, null, 6, 0],
     display: ["flex", null, null, null, "grid"],
     alignItems: "center",
-    "@media screen and (min-width: 1441px) and (max-width:1600px)": {
+    "@media screen and (min-width: 1441px) and (max-width:1980px)": {
       maxWidth: 300,
       minHeight: 250,
     },
@@ -37,7 +37,7 @@ const styles = {
     img: {
       maxWidth: [45, null, null, 30, 25, null, "100%"],
       margin: [0, "auto"],
-      "@media screen and (min-width: 1441px) and (max-width:1600px)": {
+      "@media screen and (min-width: 1441px) and (max-width:1980px)": {
         maxWidth: 65,
       },
     },

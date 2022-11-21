@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Grid, Flex, Container, Image, Text } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
-import pulpywork from '../assets/images/howpulpy.svg';
+import pulpywork from '../assets/images/letpulpy.svg';
 import check from '../assets/images/icons/check-circle.png';
 
 const data = [
@@ -94,7 +94,7 @@ const styles = {
     img: {
       maxWidth: [24, null, null, 30, 25, null, '100%'],
       top: ['4px', '8px', null, null, '4px', '8px'],
-      '@media screen and (min-width: 1441px) and (max-width:1600px)': {
+      '@media screen and (min-width: 1441px) and (max-width:1980px)': {
         maxWidth: 35,
       },
     },

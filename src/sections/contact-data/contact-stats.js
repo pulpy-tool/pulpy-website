@@ -84,7 +84,7 @@ const styles = {
     flexDirection: ['column-reverse', null, null, 'column', 'row'],
     alignItems: 'center',
     Three: {      
-      '@media screen and (min-width: 1024px) and (max-width:1600px)': {
+      '@media screen and (min-width: 1024px) and (max-width:1980px)': {
         gridTemplateColumns: ["1fr 1fr 1fr"],
       },
     },
@@ -104,7 +104,7 @@ const styles = {
     img: {
       maxWidth: [24, null, null, 30, 25, null, '100%'],
       top: ['4px', '8px', null, null, '4px', '8px'],
-      '@media screen and (min-width: 1441px) and (max-width:1600px)': {
+      '@media screen and (min-width: 1441px) and (max-width:1980px)': {
         maxWidth: 35,
       },
     },
