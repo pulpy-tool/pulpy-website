@@ -51,7 +51,7 @@ const styles = {
       lineHeight: [1.26, null, null, 1.5, 1.2, 1.26],
       letterSpacing: [0, null, null, null, "-1.5px"],
       color: "textSecondary",
-      "@media screen and (min-width: 1441px) and (max-width:1600px)": {
+      "@media screen and (min-width: 1441px) and (max-width:1980px)": {
         fontSize: 12,
         lineHeight: 1.2,
       },

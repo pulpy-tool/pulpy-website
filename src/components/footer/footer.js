@@ -181,12 +181,12 @@ const styles = {
     alignItems: "center",
     flexDirection: ["column-reverse", null, null, "column", "row"],
     Three: {
-      '@media screen and (min-width: 1024px) and (max-width:1600px)': {
+      '@media screen and (min-width: 1024px) and (max-width:1980px)': {
         gridTemplateColumns: ["1fr 1fr 1fr"],
       },
     },
     Four: {      
-      '@media screen and (min-width: 1024px) and (max-width:1600px)': {
+      '@media screen and (min-width: 1024px) and (max-width:1980px)': {
         gridTemplateColumns: ["1fr 1fr 1fr 1fr"],
       },
     },

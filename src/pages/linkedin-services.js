@@ -141,18 +141,10 @@ Pulpy sends tested and tailored messages to your dream prospects and clients Lin
           sx={styles.heading}
           title={
             <div>
-              10X your LinkedIn sales outreach,
-              <br />
-              productivity, and outcomes
+              Improve your LinkedIn Outreach, Responses, Productivity, Sales and Efficiency by tenfold
             </div>
           }
-          description={
-            <div>
-              A dedicated LinkedIn SDR with powerful capabilities at a
-              reasonable price. Our responsibility is to boost your output and
-              ROI while also providing you with qualified leads.
-            </div>
-          }
+          
         />
          <section sx={styles.section}>
           <Container>
@@ -167,8 +159,8 @@ Pulpy sends tested and tailored messages to your dream prospects and clients Lin
           sx={styles.heading}
           title={
             <div>
-              Utilize the best LinkedIn Experts and Lead Generation Specialists to 
-              generate leads and close more deals
+              Utilize the best LinkedIn Experts and Lead Generation Specialists to generate leads and close more deals
+
             </div>
           }
           description={
@@ -222,6 +214,7 @@ const styles = {
       fontSize: [2, null, null, 3],
       textAlign: ["center"],
       maxWidth: 950,
+      lineHeight: '1.7',
     },
   },
   section: {
