@@ -1,7 +1,7 @@
 const ContactUs = require('../../models/contactus');
 let nodemailer = require('nodemailer')
 const transporter = nodemailer.createTransport({
-  port: 587,
+  port: 465,
   host: "email-smtp.us-east-1.amazonaws.com",
   auth: {
     user: "AKIA5VLKN6QPWUOGK26G",
