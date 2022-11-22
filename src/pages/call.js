@@ -115,7 +115,7 @@ export default function FreeConsultation({ buttonLabel, ...props }) {
 
       
       
-      const { error } = await res.json();
+      const { error } = await res.json(data);
 
       if (error) {
         console.log(error);
