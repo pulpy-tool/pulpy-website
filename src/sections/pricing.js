@@ -11,7 +11,7 @@ const data = [
     id: 1,
     title: 'Free',
     subtitle: 'Test Drive Data your prospects [50 Credits] / 1 User',
-    amount: {
+   amount: {
       monthly: 0.00,
       annual: 0.00 * 1,
     },
@@ -50,9 +50,9 @@ const data = [
     id: 2,
     title: 'Pro',
     subtitle: 'Essential for finding your prospects [480 Credits] / 1 User',
-    amount: {
-      monthly: 400,
-      annual: 400 * 12 - 10,
+     amount: {
+      monthly: 99,
+      annual: 949,
     },
     isRecommended: true,
     buttonText: 'Choose Plan',
@@ -89,8 +89,8 @@ const data = [
     title: 'Premium',
     subtitle: 'Small teams with simple workflows [960 Credits] / 1 User',
     amount: {
-      monthly: 612,
-      annual: 612 * 12 - 10,
+      monthly: 199,
+      annual: 1949,
     },
     isRecommended: false,
     buttonText: 'Choose Plan',
