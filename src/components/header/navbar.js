@@ -54,7 +54,10 @@ export default function NextNavbar() {
           color: "primary",
         }}
       >
-        <Navbar.Link href="/" color="inherit">
+        
+      </Navbar.Content>
+      <Navbar.Content>
+      <Navbar.Link href="/" color="inherit">
           Home
         </Navbar.Link>
         <Dropdown isBordered>
@@ -139,8 +142,6 @@ export default function NextNavbar() {
         <Navbar.Link href="https://app.apollo.io/#/meet/pulpy" target={"_blank"} onClick={() => handler()} color="inherit">
           Contact Us
         </Navbar.Link>
-      </Navbar.Content>
-      <Navbar.Content>
         <Navbar.Link color="inherit" href="#" variant="underline">
           Login
         </Navbar.Link>

@@ -3,6 +3,8 @@ import React from "react";
 import {
   jsx,
   Grid,
+ Link,
+  Button,
   Container,
   ThemeProvider,
 } from "theme-ui";
@@ -107,24 +109,37 @@ export default function LinkedinPage() {
           title="Pulpy | LinkedIn Lead Generation Services"
           description="Pulpy is the most advanced LinkedIn Automation Tool * Start Free Trail Now"
         />
-        <InnerBanner
-          title="LinkedIn Lead Gen Agency for SaaS companies"
+        <section sx={styles.linkedinServices}>
+        <Container>
+        <SectionHeading
+          sx={styles.heading}
+          title="LinkedIn Lead Generation Service & Agency for SaaS companies"
           description={
-            <div>
-              Get <b>More leads on linkedin</b> and scale your sales and revenue. 
-Pulpy sends tested and tailored messages to your dream prospects and clients Linkedin and receives favourable answers directly to your Linkedin inbox by using data from hundreds of outbound B2B campaigns
+            <div>              
+              We send tailored messages to your dream prospects/clients, help you receive favourable responses directly to your Linkedin inbox by using data from hundreds of outbound B2B campaigns and scale your sales & revenue.
             </div>
           }
-          img={illustration}
-          buttonLabel={"Lets Talk"}
         />
+        <Button
+                className="getStarted"
+                css={{
+                  backgroundColor: "#FF8140",
+                }}
+                as={Link}
+               
+                target={"_blank"}
+            href="https://app.apollo.io/#/meet/pulpy"
+              >
+                Get Started Today
+              </Button>
+        </Container>
+        </section>
         <SectionHeading
           sx={styles.heading}
           title="How we generate leads on LinkedIn for clients"
           description={
             <div>
               We leverage high-performing data from hundreds of successfully completed LinkedIn Lead Generation campaigns across all industries to target and engage your most qualified decision makers, pushing them straight into your sales funnel.
-
             </div>
           }
         />
@@ -141,7 +156,7 @@ Pulpy sends tested and tailored messages to your dream prospects and clients Lin
           sx={styles.heading}
           title={
             <div>
-              Improve your LinkedIn Outreach, Responses, Productivity, Sales and Efficiency by tenfold
+              Improve your LinkedIn Outreach, Responses, Productivity, Sales and Efficiency
             </div>
           }
           
@@ -181,7 +196,7 @@ Pulpy sends tested and tailored messages to your dream prospects and clients Lin
         <section sx={styles.pricing}>
         <SectionHeading
           sx={styles.heading}
-          title={<div>Pricing for LinkedIn lead generation</div>}
+          title={<div>Get Started for LinkedIn lead generation</div>}
           description={
             <div>
               No commitments; month-to-month. Discounts are offered for 3-6
@@ -202,6 +217,7 @@ const styles = {
   heading: {
     mb: [7, null, null, 8, 9, 10],
     maxWidth: 950,
+    
     h2: {
       color: "heading",
       fontSize: ["24px", null, null, "36px", "31px", 10, 40],
@@ -220,6 +236,22 @@ const styles = {
   section: {
     minHeight: 450,
     alignItems: "center",
+    textAlign: 'center',
+  },
+  linkedinServices:{
+    minHeight: 450,
+    alignItems: "center",
+    textAlign: 'center',
+    h2:{
+      color: "heading",
+      marginTop: [7, null, null, 8, 9, 200],
+    },
+    getStarted:{
+      margin: '0 auto',
+      padding: '20px',
+      display: 'table',
+      width:'100%',
+    },
   },
   grid: {
     gap: [0, 0, 0, 0, 10, 20],
@@ -238,5 +270,6 @@ const styles = {
     minHeight:150,
     pt: [40],
     pb: [40]
-  }
+  },
+  
 };

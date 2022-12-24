@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import React from "react";
-import { jsx, ThemeProvider, Box, Grid, Text, Container } from "theme-ui";
+import { jsx, ThemeProvider, Box, Grid, Text, Container, Image } from "theme-ui";
 import theme from "theme";
 import SEO from "components/seo";
 import Layout from "components/layout";
 import InnerBanner from "components/banner/banner";
 import Subscribe from 'sections/subscribe';
 import Automateillustrate from "assets/images/Automate.svg";
+import AboutUsImage from "assets/images/AboutUs.jpg";
 import { rgba } from "polished";
 
 export default function AboutUs() {
@@ -18,18 +19,11 @@ export default function AboutUs() {
           description="Pulpy provides high quality, unique premium data where you need it most: On social networks, the web, Salesforce or directly on your product."
         />
         <Box sx={styles.aboutus}>
-          <section sx={styles.section}>
-            <Grid sx={styles.bglight}>
-              <Container>
-                <Text as="h2">
-                  Pulpy is on a mission to produce innovative marketing and
-                  sales solutions. We help businesses generate more quality
-                  leads, close more deals and increase their profits.
-                </Text>
-              </Container>
-            </Grid>
-          </section>
-          
+        <Image src={AboutUsImage} alt="About Us" />
+        <Text as="h2">
+                  
+                  This is US
+        </Text>          
         </Box>
         <InnerBanner
           title="We Automate Marketing and Sales Pipeline"
@@ -49,12 +43,18 @@ export default function AboutUs() {
 
 const styles = {
   aboutus: {
+    position:'relative',
     h2: {
-      color: "heading",
-      fontSize: ["20px", null, null, "36px", "31px", 10, 36],
+      width:'100%',
+      color: "#ffffff",
+      fontSize: ["20px", null, null, "36px", "31px", 10, 75],
       lineHeight: [1.33, 1.33, 1.26, null, 1.2, 1.3],
       letterSpacing: "-1px",
       letterSpacing: "-1px",
+      fontWeight: 'Bold',
+      position:'absolute',
+      textAlign:'center',
+      top:'15rem'
     },
     p: {
       color: "text",
@@ -64,10 +64,10 @@ const styles = {
     },
   },
   section: {
-    minHeight: 600,
+    minHeight: 500,
     alignItems: "center",
     display: ["grid"],
-    backgroundColor: rgba("#F19C53", 0.2),
+    
     Button:{
       display:['none'],
     }
