@@ -108,7 +108,7 @@ export default function LinkedinPage() {
           description="Pulpy is the most advanced LinkedIn Automation Tool * Start Free Trail Now"
         />
         <InnerBanner
-          title="#1 LinkedIn Lead Generation Agency"
+          title="LinkedIn Lead Gen Agency for SaaS companies"
           description={
             <div>
               Get <b>More leads on linkedin</b> and scale your sales and revenue. 

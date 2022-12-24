@@ -30,7 +30,7 @@ export default function NextNavbar() {
       label: "About Us",
     },
     {
-      path: "call",
+      path: "https://app.apollo.io/#/meet/pulpy",
       label: "Contact Us",
     },
   ];
@@ -136,7 +136,7 @@ export default function NextNavbar() {
         <Navbar.Link href="about-us" onClick={() => handler()} color="inherit">
           About Us
         </Navbar.Link>
-        <Navbar.Link href="call" onClick={() => handler()} color="inherit">
+        <Navbar.Link href="https://app.apollo.io/#/meet/pulpy" target={"_blank"} onClick={() => handler()} color="inherit">
           Contact Us
         </Navbar.Link>
       </Navbar.Content>
@@ -152,7 +152,8 @@ export default function NextNavbar() {
             }}
             as={Link}
             onClick={() => handler()}
-            href="call"
+            target={"_blank"}
+            href="https://app.apollo.io/#/meet/pulpy"
           >
             Free Consulation
           </Button>

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Grid, Flex, Container, Button, Image, Text } from "theme-ui";
+import { jsx, Box, Grid, Flex, Container, Button, Image, Text, Link } from "theme-ui";
 import check from "../../assets/images/icons/check-circle.png";
 
 const data = [
@@ -91,23 +91,35 @@ const data = [
   },
 ];
 
+
 const SinglePricing = () => {
   return (
     <section sx={styles.section}>
       <Container sx={styles.cardGroup}>
         <Grid sx={styles.grid}>
-        <Box sx={styles.features}>
-              {data?.map(({ id, label }) => (
-                <Flex key={id} as="span" sx={{ alignItems: "flex-start" }}>
-                  <Image src={check} alt="check icon" />
-                  <Text as="span">{label}</Text>
-                </Flex>
-              ))}
-            </Box>
+          <Box sx={styles.features}>
+            {data?.map(({ id, label }) => (
+              <Flex key={id} as="span" sx={{ alignItems: "flex-start" }}>
+                <Image src={check} alt="check icon" />
+                <Text as="span">{label}</Text>
+              </Flex>
+            ))}
+          </Box>
           <Box sx={styles.rightContent}>
             <Box sx={styles.cards}>
-                <Text as="h2">$ 1999/Mo</Text>
-                <Button>Get Started Today</Button>
+              <Text as="h2">$ 1999/Mo</Text>
+              <Button
+                className="getStarted"
+                css={{
+                  backgroundColor: "#FF8140",
+                }}
+                as={Link}
+               
+                target={"_blank"}
+            href="https://app.apollo.io/#/meet/pulpy"
+              >
+                Get Started Today
+              </Button>
             </Box>
           </Box>
         </Grid>
@@ -152,17 +164,16 @@ const styles = {
     boxShadow: "0px 13px 40px rgba(75, 102, 135, 0.1)",
     lineHeight: 1.51,
     h2: {
-        fontWeight: 900,
-        fontSize: [50, null, null, null, 55],
-        lineHeight: 1.5,
-        color: "textSecondary",
-        textAlign: "center",
-      },
-      Button: {
-        textAlign: 'Center',
-        m:'0 auto',
-        display: ["table"]
-      }
+      fontWeight: 900,
+      fontSize: [50, null, null, null, 55],
+      lineHeight: 1.5,
+      color: "textSecondary",
+      textAlign: "center",
+    },
+    Button: {
+      textAlign: "Center",
+      m: "0 auto",
+      display: ["table"],
+    },
   },
-  
 };
